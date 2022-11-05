@@ -43,6 +43,17 @@ I added the following features:
 - [README.md](README.md) - Project description
 - ...
 
+# Used libraries & tools
+- [pandas](https://pandas.pydata.org/)
+- [numpy](https://numpy.org/)
+- [matplotlib](https://matplotlib.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [scikit-learn](https://scikit-learn.org/stable/)
+- [BentoML](https://bentoml.org/)
+- [streamlit](https://streamlit.io/)
+- [Dockers](https://www.docker.com/)
+- [Pipenv](https://pypi.org/project/pipenv/)
+
 # How to run the project:
 
  
