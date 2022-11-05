@@ -1,11 +1,11 @@
 import pandas as pd
 from loguru import logger
 
-MAIN_DATA_PATH = "../data/raw/car_purchasing.csv"
-COUNTRIES_DATA_PATH = "../data/raw/countries_of_the_world.csv"
+MAIN_DATA_PATH = "data/raw/car_purchasing.csv"
+COUNTRIES_DATA_PATH = "data/raw/countries_of_the_world.csv"
 
-MAIN_DATA_OUTPUT_PATH = "../data/processed/main_data.csv"
-COUNTRIES_DATA_OUTPUT_PATH = "../data/processed/countries_data.csv"
+MAIN_DATA_OUTPUT_PATH = "data/processed/main_data.csv"
+COUNTRIES_DATA_OUTPUT_PATH = "data/processed/countries_data.csv"
 
 
 def load_main_data(countries_df: pd.DataFrame) -> pd.DataFrame:

@@ -56,5 +56,14 @@ I added the following features:
 - [Pipenv](https://pypi.org/project/pipenv/)
 
 # How to run the project:
+1. Clone the repository
+2. Install the dependencies
+```bash
+pipenv install
+```
+3. Run the project
+```bash
+pipenv run python pipenv run scripts/python 1_data_preporation.py # data preparation
+```
 
  
