@@ -92,7 +92,7 @@ curl -X 'POST' \
 
 # Containerization
 
-The project is containerized with Bentoml.
+The project is containerized with Bentoml.  
 To build the container, run the following command:
 ```bash
 cd bento
