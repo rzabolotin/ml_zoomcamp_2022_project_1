@@ -40,20 +40,11 @@ I added the following features:
 - [data](data) - Folder with data
   - [raw](data/raw) - Folder with raw data
   - [processed](data/processed) - Folder with processed data
+- [scripts](scripts) - Folder with scripts
+  - [data preparation](scripts/1_data_preporation.py) - Script for data preparation
 - [artifacts](artefacts) - Folder with artifacts of the project
 - [README.md](README.md) - Project description
 - ...
-
-# Used libraries & tools
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
-- [matplotlib](https://matplotlib.org/)
-- [seaborn](https://seaborn.pydata.org/)
-- [scikit-learn](https://scikit-learn.org/stable/)
-- [BentoML](https://bentoml.org/)
-- [streamlit](https://streamlit.io/)
-- [Dockers](https://www.docker.com/)
-- [Pipenv](https://pypi.org/project/pipenv/)
 
 # How to run the project:
 1. Clone the repository
@@ -66,4 +57,13 @@ pipenv install
 pipenv run python pipenv run scripts/python 1_data_preporation.py
 ```
 
- 
+# Used libraries & tools
+- [pandas](https://pandas.pydata.org/)
+- [numpy](https://numpy.org/)
+- [matplotlib](https://matplotlib.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [scikit-learn](https://scikit-learn.org/stable/)
+- [BentoML](https://bentoml.org/)
+- [streamlit](https://streamlit.io/)
+- [Dockers](https://www.docker.com/)
+- [Pipenv](https://pypi.org/project/pipenv/)
