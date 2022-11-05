@@ -61,7 +61,7 @@ pipenv run python scripts/1_data_preparation.py
 ```
 3. Train catboost model
 ```bash
-pipenv run python scripts/2_model_training.py.py
+pipenv run python scripts/2_model_training.py
 4. Run sample prediction
 ```bash
 pipenv run python scripts/3_model_evaluation.py
