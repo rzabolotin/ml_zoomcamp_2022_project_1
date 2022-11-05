@@ -45,9 +45,10 @@ I added the following features:
   - [raw](data/raw) - Folder with raw data
   - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts)
 - [artifacts](artefacts) - Folder with artifacts of the project (model & vectorizer)
+- [bento](bento) - Folder with bentoML service
+- [docker](docker) - Folder with docker files
 - [README.md](README.md) - Project description
 - [pipenv](Pipfile) - Pipenv file with project dependencies
-- ...
 
 # How to run the project:
 1. Clone the repository
