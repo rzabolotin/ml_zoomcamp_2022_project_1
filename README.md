@@ -37,13 +37,14 @@ I added the following features:
 - [notebooks](notebooks) - Folder with notebooks
   - [EDA](<notebooks/1.%20EDA%20&%20data%20preparation.ipynb>) - Exploratory data analysis and data preparation
   - [Model selection](<notebooks/3. Model selection.ipynb>) - Model creation and selection
-- [data](data) - Folder with data
-  - [raw](data/raw) - Folder with raw data
-  - [processed](data/processed) - Folder with processed data
 - [scripts](scripts) - Folder with scripts
   - [data preparation](scripts/1_data_preporation.py) - Script for data preparation
-- [artifacts](artefacts) - Folder with artifacts of the project
+- [data](data) - Folder with data
+  - [raw](data/raw) - Folder with raw data
+  - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts)
+- [artifacts](artefacts) - Folder with artifacts of the project (models, vectorizers)
 - [README.md](README.md) - Project description
+- [pipenv](Pipfile) - Pipenv file with project dependencies
 - ...
 
 # How to run the project:
