@@ -35,7 +35,7 @@ I added the following features:
 
 # Project structure:
 - [notebooks](notebooks) - Folder with notebooks
-  - [EDA](<notebooks/1. EDA.ipynb>) - Exploratory data analysis and feature engineering
+  - [EDA](<notebooks/1.%20EDA%20&%20data%20preparation.ipynb>) - Exploratory data analysis and data preparation
   - [Model selection](<notebooks/3. Model selection.ipynb>) - Model creation and selection
 - [data](data) - Folder with data
   - [raw](data/raw) - Folder with raw data
