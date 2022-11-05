@@ -61,9 +61,9 @@ I added the following features:
 ```bash
 pipenv install
 ```
-3. Run the project
+3. Prepare the data for training
 ```bash
-pipenv run python pipenv run scripts/python 1_data_preporation.py # data preparation
+pipenv run python pipenv run scripts/python 1_data_preporation.py
 ```
 
  
