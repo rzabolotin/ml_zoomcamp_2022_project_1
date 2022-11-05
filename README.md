@@ -67,6 +67,29 @@ pipenv run python scripts/2_model_training.py
 ```bash
 pipenv run python scripts/3_model_evaluation.py
 ```
+5. Run local bentoml service
+```bash
+cd bento
+pipenv run bentoml serve --production
+```
+Then you can test API on [http://localhost:3000](http://localhost:3000)
+or by curl
+```bash
+curl -X 'POST' \
+  'http://localhost:3000/predict' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{"customer_name": "Martina Avila",
+               "customer_email": "cubilia.Curae.Phasellus@quisaccumsanconvallis.edu",
+               "country": "Bulgaria",
+               "gender": 0,
+               "age": 42,
+               "annual_salary": 62812,
+               "credit_card_debt": 11609.5,
+               "net_worth": 238961.2}'
+```
+
+
 
 # Used libraries & tools
 - [pandas](https://pandas.pydata.org/)
@@ -76,6 +99,5 @@ pipenv run python scripts/3_model_evaluation.py
 - [scikit-learn](https://scikit-learn.org/stable/)
 - [catboost](https://catboost.ai/)
 - [BentoML](https://bentoml.org/)
-- [streamlit](https://streamlit.io/)
 - [Dockers](https://www.docker.com/)
 - [Pipenv](https://pypi.org/project/pipenv/)

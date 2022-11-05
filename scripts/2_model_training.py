@@ -1,5 +1,6 @@
 import pickle
 
+import bentoml
 from catboost import CatBoostRegressor
 from loguru import logger
 from sklearn.metrics import mean_squared_error
@@ -60,6 +61,14 @@ def main():
     model.save_model(MODEL_FILE)
     with open(VECTORIZER_PATH, "wb") as pkl_file:
         pickle.dump(dataPreparation, pkl_file)
+
+    bentoml.catboost.save_model(
+        "what_price_catboost",
+        model,
+        custom_objects={
+            'vectorizer': dataPreparation
+        }
+    );
 
     logger.success("Done")
 

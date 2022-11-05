@@ -8,6 +8,8 @@ pandas = "*"
 loguru = "*"
 catboost = "*"
 sklearn = "*"
+bentoml = "*"
+pydantic = "*"
 
 [dev-packages]
 

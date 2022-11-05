@@ -12,15 +12,14 @@ with open(VECTORIZER_FILE, "rb") as f:
 model = CatBoostRegressor()
 model.load_model(MODEL_FILE)
 
-sample_data = {'customer_name': 'Martina Avila',
-               'customer_email': 'cubilia.Curae.Phasellus@quisaccumsanconvallis.edu',
-               'country': 'Bulgaria',
-               'gender': 0,
-               'age': 42,
-               'annual_salary': 62812,
-               'credit_card_debt': 11609.5,
-               'net_worth': 238961.2,
-               'car_purchase_amount': 35320}
+sample_data = {"customer_name": "Martina Avila",
+               "customer_email": "cubilia.Curae.Phasellus@quisaccumsanconvallis.edu",
+               "country": "Bulgaria",
+               "gender": 0,
+               "age": 42,
+               "annual_salary": 62812,
+               "credit_card_debt": 11609.5,
+               "net_worth": 238961.2}
 
 
 def main():
