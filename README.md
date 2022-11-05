@@ -89,6 +89,23 @@ curl -X 'POST' \
                "net_worth": 238961.2}'
 ```
 
+# Containerization
+
+The project is containerized with Bentoml.
+To build the container, run the following command:
+```bash
+cd bento
+pipenv run bentoml build
+pipenv run bentoml containerize what_price:latest
+```
+To run the container, run the following command:
+```bash
+docker run -it --rm -p 3000:3000 what_price:uqfzsys5isn3caav
+```
+
+Then you can test API on [http://localhost:3000](http://localhost:3000)
+
+The Dockerfile created by bentoml is located in the [docker folder](docker).
 
 
 # Used libraries & tools
