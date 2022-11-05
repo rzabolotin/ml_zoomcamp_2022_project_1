@@ -36,13 +36,15 @@ I added the following features:
 # Project structure:
 - [notebooks](notebooks) - Folder with notebooks
   - [EDA](<notebooks/1.%20EDA%20&%20data%20preparation.ipynb>) - Exploratory data analysis and data preparation
-  - [Model selection](<notebooks/3. Model selection.ipynb>) - Model creation and selection
+  - [Model selection](<notebooks/2.%20Model%20training.ipynb>) - Model creation and selection
 - [scripts](scripts) - Folder with scripts
   - [data preparation](scripts/1_data_preparation.py) - Script for data preparation
+  - [model training](scripts/2_model_training.py) - Script for model training
+  - [model evaluation](scripts/3_model_evaluation.py) - Script for model evaluation
 - [data](data) - Folder with data
   - [raw](data/raw) - Folder with raw data
   - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts)
-- [artifacts](artefacts) - Folder with artifacts of the project (models, vectorizers)
+- [artifacts](artefacts) - Folder with artifacts of the project (model & vectorizer)
 - [README.md](README.md) - Project description
 - [pipenv](Pipfile) - Pipenv file with project dependencies
 - ...
@@ -55,7 +57,14 @@ pipenv install
 ```
 3. Prepare the data for training
 ```bash
-pipenv run python pipenv run scripts/python 1_data_preporation.py
+pipenv run python scripts/1_data_preparation.py
+```
+3. Train catboost model
+```bash
+pipenv run python scripts/2_train_model.py
+4. Run sample prediction
+```bash
+pipenv run python scripts/3_predict.py
 ```
 
 # Used libraries & tools
@@ -64,6 +73,7 @@ pipenv run python pipenv run scripts/python 1_data_preporation.py
 - [matplotlib](https://matplotlib.org/)
 - [seaborn](https://seaborn.pydata.org/)
 - [scikit-learn](https://scikit-learn.org/stable/)
+- [catboost](https://catboost.ai/)
 - [BentoML](https://bentoml.org/)
 - [streamlit](https://streamlit.io/)
 - [Dockers](https://www.docker.com/)
