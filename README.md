@@ -38,7 +38,7 @@ I added the following features:
   - [EDA](<notebooks/1.%20EDA%20&%20data%20preparation.ipynb>) - Exploratory data analysis and data preparation
   - [Model selection](<notebooks/3. Model selection.ipynb>) - Model creation and selection
 - [scripts](scripts) - Folder with scripts
-  - [data preparation](scripts/1_data_preporation.py) - Script for data preparation
+  - [data preparation](scripts/1_data_preparation.py) - Script for data preparation
 - [data](data) - Folder with data
   - [raw](data/raw) - Folder with raw data
   - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts)
