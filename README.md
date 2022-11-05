@@ -7,7 +7,8 @@ Knowledge of this will help car dealers to make better decisions on whom and how
 During the EDA and model creation I realized that the dataset is synthetic and the target variable is a linear combination of the features. And the model can be described as a linear combination of features.  
 
 But I still decided to create a model, and make all steps of the project
-## Sources of data
+
+# Sources of data
 In this project, I used the data from the [ANN - Car Sales Price Prediction](https://www.kaggle.com/datasets/yashpaloswal/ann-car-sales-price-prediction) dataset on Kaggle.
 
 **Dataset description:**  
