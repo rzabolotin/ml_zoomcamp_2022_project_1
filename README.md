@@ -47,6 +47,7 @@ I added the following features:
 - [artifacts](artefacts) - Folder with artifacts of the project (model & vectorizer)
 - [bento](bento) - Folder with bentoML service
 - [docker](docker) - Folder with docker files
+- [terraform](terraform) - Folder with terraform files for deployment
 - [README.md](README.md) - Project description
 - [pipenv](Pipfile) - Pipenv file with project dependencies
 

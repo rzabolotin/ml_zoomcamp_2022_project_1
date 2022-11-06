@@ -3,3 +3,6 @@
 /data/processed
 *catboost_info
 /artefacts
+/teraform/*.backup
+/teraform/.terraform*
+/teraform/terraform.tfstate
