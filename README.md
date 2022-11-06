@@ -41,6 +41,7 @@ I added the following features:
   - [data preparation](scripts/1_data_preparation.py) - Script for data preparation
   - [model training](scripts/2_model_training.py) - Script for model training
   - [model evaluation](scripts/3_model_evaluation.py) - Script for model evaluation
+  - [vectorizers](scripts/vectorizers.py) - Module with vectorizer's classes (I move them to a separate module to be able tu pickle them) (also I copied this file to the notebooks folder to be able to use it in the notebooks, and to bento folder)
 - [data](data) - Folder with data
   - [raw](data/raw) - Folder with raw data
   - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts) (created during training)
