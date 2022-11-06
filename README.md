@@ -43,8 +43,8 @@ I added the following features:
   - [model evaluation](scripts/3_model_evaluation.py) - Script for model evaluation
 - [data](data) - Folder with data
   - [raw](data/raw) - Folder with raw data
-  - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts)
-- [artifacts](artefacts) - Folder with artifacts of the project (model & vectorizer)
+  - [processed](data/processed) - Folder with processed data (filled by notebooks/scripts) (created during training)
+- [artifacts](artefacts) - Folder with artifacts of the project (model & vectorizer)  (created during training)
 - [bento](bento) - Folder with bentoML service
 - [docker](docker) - Folder with docker files
 - [terraform](terraform) - Folder with terraform files for deployment
@@ -74,8 +74,8 @@ pipenv run python scripts/3_model_evaluation.py
 cd bento
 pipenv run bentoml serve --production
 ```
-Then you can test API on [http://localhost:3000](http://localhost:3000)
-or by curl
+Then you can test API on [http://localhost:3000](http://localhost:3000)  
+or by curl:
 ```bash
 curl -X 'POST' \
   'http://localhost:3000/predict' \
@@ -133,7 +133,7 @@ bentoctl build -b what_price:latest -f deployment_config.yaml
 terraform init
 terraform apply -var-file=bentoctl.tfvars -auto-approve
 ```
-6. You can try API on cloud [in browser](https://3yp445iaed.execute-api.us-west-1.amazonaws.com/)  
+6. You can try API on cloud [in browser](https://3yp445iaed.execute-api.us-west-1.amazonaws.com/)    
 Or by curl:
 ```bash
 curl -X 'POST' \
