@@ -134,11 +134,11 @@ bentoctl build -b what_price:latest -f deployment_config.yaml
 terraform init
 terraform apply -var-file=bentoctl.tfvars -auto-approve
 ```
-6. You can try API on cloud [in browser](https://3yp445iaed.execute-api.us-west-1.amazonaws.com/)    
+6. You can try API on cloud [in browser](https://dvayarixs2.execute-api.us-west-1.amazonaws.com/)    
 Or by curl:
 ```bash
 curl -X 'POST' \
-  'https://3yp445iaed.execute-api.us-west-1.amazonaws.com/predict' \
+  'https://dvayarixs2.execute-api.us-west-1.amazonaws.com/predict' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
   -d '{"customer_name": "Martina Avila",
@@ -154,8 +154,6 @@ curl -X 'POST' \
 ```bash
 bentoctl destroy -f deployment_config.yaml
 ```
-
-
 
 # Used libraries & tools
 - [pandas](https://pandas.pydata.org/)
