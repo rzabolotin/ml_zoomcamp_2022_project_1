@@ -149,7 +149,6 @@ curl -X 'POST' \
                "credit_card_debt": 11609.5,
                "net_worth": 238961.2}'
 ```
-```
 7. Destroy deployment
 ```bash
 bentoctl destroy -f deployment_config.yaml
