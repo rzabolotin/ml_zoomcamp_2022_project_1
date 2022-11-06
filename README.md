@@ -108,6 +108,53 @@ Then you can test API on [http://localhost:3000](http://localhost:3000)
 
 The Dockerfile created by bentoml is located in the [docker folder](docker).
 
+# Deployment
+For deployment, I used [AWS Lambda](https://aws.amazon.com/lambda/).  
+I used following [tutorial](https://github.com/bentoml/aws-lambda-deploy) from bentoml documentation.
+1. Install bentoctl
+```bash
+pip install bentoctl
+```
+2. Create AWS Lambda deployment
+```bash
+bentoctl operator install aws-lambda
+```
+3. Initialize deployment with bentoctl 
+```bash
+bentoctl init
+```
+4. Build and push AWS Lambda comptable docker image to registry
+```bash
+bentoctl build -b what_price:latest -f deployment_config.yaml
+```
+5. Deploy to AWS Lambda
+```bash
+terraform init
+terraform apply -var-file=bentoctl.tfvars -auto-approve
+```
+6. You can try API on cloud [in browser](https://3yp445iaed.execute-api.us-west-1.amazonaws.com/)  
+Or by curl:
+```bash
+curl -X 'POST' \
+  'https://3yp445iaed.execute-api.us-west-1.amazonaws.com/predict' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{"customer_name": "Martina Avila",
+               "customer_email": "cubilia.Curae.Phasellus@quisaccumsanconvallis.edu",
+               "country": "Bulgaria",
+               "gender": 0,
+               "age": 42,
+               "annual_salary": 62812,
+               "credit_card_debt": 11609.5,
+               "net_worth": 238961.2}'
+```
+```
+7. Destroy deployment
+```bash
+bentoctl destroy -f deployment_config.yaml
+```
+
+
 
 # Used libraries & tools
 - [pandas](https://pandas.pydata.org/)
@@ -119,3 +166,4 @@ The Dockerfile created by bentoml is located in the [docker folder](docker).
 - [BentoML](https://bentoml.org/)
 - [Dockers](https://www.docker.com/)
 - [Pipenv](https://pypi.org/project/pipenv/)
+- [AWS Lambda](https://aws.amazon.com/lambda/)
